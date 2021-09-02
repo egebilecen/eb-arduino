@@ -1,3 +1,5 @@
+#include "serial_helper.h"
+
 void write_int(Stream& serial, int val)
 {
   serial.write((uint8_t)(val & 0x00ff));
